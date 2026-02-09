@@ -284,6 +284,10 @@ h3 {
     background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('news-hero.png') center 15%/cover;
 }
 
+.supply-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-procurement.jpg') center/cover;
+}
+
 .page-header h1 {
     font-size: 3rem;
     margin-bottom: 15px;
