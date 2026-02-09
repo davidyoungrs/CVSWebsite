@@ -1,5 +1,12 @@
 # CVS Latest News
 
+## New website live
+**Date:** 2026-02-09
+
+Control Valve Services are proud to announce the release of our brand new website. We have been working on the new mobile-friendly format for a while that also reflects our modern approach to valve services We hope you enjoy the new website! 
+
+---
+
 ## December Already!! A Record breaking year for Control Valve Services Ltd.
 **Date:** 2018-12-13
 
