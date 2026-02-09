@@ -281,7 +281,7 @@ h3 {
 }
 
 .news-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.7), rgba(10, 22, 34, 0.7)), url('/Users/davidyoung/.gemini/antigravity/brain/21eaf7af-4da2-4e18-a60e-0a953ae1458a/vales_daily_newspaper_hero_2_1770669465333.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.7), rgba(10, 22, 34, 0.7)), url('news-hero.png') center/cover;
 }
 
 .page-header h1 {
