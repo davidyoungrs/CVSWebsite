@@ -27,10 +27,18 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: var(--secondary);
     line-height: 1.2;
+}
+
+h1 {
+    color: var(--text-light);
 }
 
 .container {
@@ -163,7 +171,7 @@ h3 {
 
 .hero .badge {
     background: rgba(26, 86, 174, 0.15);
-    color: var(--primary);
+    color: var(--text-light);
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -260,7 +268,7 @@ h3 {
 /* Internal Pages */
 .page-header {
     background: var(--bg-dark);
-    color: var(--white);
+    color: var(--text-light);
     padding: 80px 0;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -276,12 +284,20 @@ h3 {
     background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000') center/cover;
 }
 
+.service.supply-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-procurement.jpg') center/cover;
+}
+
 .services-header {
     background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-repairs.jpg') center/cover;
 }
 
 .news-header {
     background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('news-hero.png') center 15%/cover;
+}
+
+.contact-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('contact-hero.png') center/cover;
 }
 
 .page-header h1 {
