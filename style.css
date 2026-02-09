@@ -1,7 +1,7 @@
 :root {
-    --primary: #FF6B00;
-    /* Safety Orange */
-    --primary-hover: #E66000;
+    --primary: #1a56ae;
+    /* Brand Blue */
+    --primary-hover: #15458c;
     --secondary: #1A2B3C;
     /* Deep Navy */
     --accent: #E0E0E0;
@@ -63,7 +63,7 @@ h3 {
 .btn-primary:hover {
     background: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(26, 86, 174, 0.3);
 }
 
 .btn-secondary {
@@ -162,7 +162,7 @@ h3 {
 }
 
 .hero .badge {
-    background: rgba(255, 107, 0, 0.15);
+    background: rgba(26, 86, 174, 0.15);
     color: var(--primary);
     padding: 6px 12px;
     border-radius: 20px;
@@ -172,7 +172,7 @@ h3 {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 20px;
-    border: 1px solid rgba(255, 107, 0, 0.3);
+    border: 1px solid rgba(26, 86, 174, 0.3);
 }
 
 .hero h1 {
