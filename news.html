@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News | Control Valve Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        .news-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .news-post {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+            margin-bottom: 40px;
+            border-left: 5px solid var(--primary);
+            transition: var(--transition);
+        }
+
+        .news-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .news-post h2 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .news-post .date {
+            display: inline-block;
+            background: rgba(255, 107, 0, 0.1);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .news-post .content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        #news-feed h1 {
+            display: none;
+            /* Hide the main H1 from markdown as we have it in page-header */
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 40px 0;
+            display: none;
+            /* Hide HRs between posts as we use cards */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://www.controlvalveservices.co.uk/wp-content/uploads/2016/12/logo-4.png"
+                        alt="CVS Logo">
+                </a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="valve-supply.html">Supply</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:01484400880" class="btn btn-outline">01484 400880</a>
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="badge">Updates & Insights</span>
+                <h1>CVS Latest News</h1>
+                <p>Stay informed about our latest projects, innovations, and industry updates.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div id="news-feed" class="news-container">
+                    <div class="loading">Loading latest updates...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Control Valve Services Ltd. | All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        async function loadNews() {
+            try {
+                const response = await fetch('news.md');
+                const markdown = await response.text();
+
+                // Split by HR to get individual posts
+                const posts = markdown.split('---').filter(p => p.trim());
+                const feed = document.getElementById('news-feed');
+                feed.innerHTML = '';
+
+                posts.forEach(post => {
+                    const html = marked.parse(post);
+                    const div = document.createElement('div');
+                    div.className = 'news-post';
+                    div.innerHTML = html;
+
+                    // Simple post-processing to style date
+                    const dateMatch = div.innerHTML.match(/\*\*Date:\*\*\s*([^\n<]+)/);
+                    if (dateMatch) {
+                        const dateSpan = `<span class="date">${dateMatch[1]}</span>`;
+                        div.innerHTML = div.innerHTML.replace(/<p><strong>Date:<\/strong>[^<]+<\/p>/, dateSpan);
+                    }
+
+                    feed.appendChild(div);
+                });
+            } catch (error) {
+                console.error('Error loading news:', error);
+                document.getElementById('news-feed').innerHTML = '<p>Unable to load news feed. Please try again later.</p>';
+            }
+        }
+
+        window.onload = loadNews;
+    </script>
+</body>
+
+</html>
