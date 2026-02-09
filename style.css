@@ -38,7 +38,7 @@ h6 {
 }
 
 h1 {
-    color: var(--text-light);
+    color: var(--white);
 }
 
 .container {
@@ -186,6 +186,7 @@ h1 {
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 24px;
+    color: var(--white);
 }
 
 .hero .highlight {
@@ -303,7 +304,7 @@ h1 {
 .page-header h1 {
     font-size: 3rem;
     margin-bottom: 15px;
-    color: var(--text-light);
+    color: var(--white);
 }
 
 .page-header p {
