@@ -141,7 +141,7 @@ h3 {
     min-height: 600px;
     display: flex;
     align-items: center;
-    background: #000 url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2000&auto=format&fit=crop') center/cover;
+    background: #000 url('https://controlvalveservices.co.uk/wp-content/uploads/2018/08/On-site-Control-Valve-Services-1.jpg') center/cover;
     color: var(--white);
     overflow: hidden;
 }
@@ -274,6 +274,10 @@ h3 {
 
 .safety-header {
     background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000') center/cover;
+}
+
+.services-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-repairs.jpg') center/cover;
 }
 
 .page-header h1 {
