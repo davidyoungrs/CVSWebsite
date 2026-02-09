@@ -281,7 +281,7 @@ h3 {
 }
 
 .news-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.7), rgba(10, 22, 34, 0.7)), url('news-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('news-hero.png') center 15%/cover;
 }
 
 .page-header h1 {
