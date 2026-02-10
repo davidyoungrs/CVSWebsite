@@ -149,7 +149,7 @@ h1 {
     min-height: 600px;
     display: flex;
     align-items: center;
-    background: #000 url('https://controlvalveservices.co.uk/wp-content/uploads/2018/08/On-site-Control-Valve-Services-1.jpg') center/cover;
+    background: #000 url('hero-bg.jpg') center/cover;
     color: var(--white);
     overflow: hidden;
 }
