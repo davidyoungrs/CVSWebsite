@@ -1,3 +1,16 @@
+/*
+Theme Name: CVS Website
+Theme URI: https://controlvalveservices.co.uk
+Author: Control Valve Services
+Author URI: https://controlvalveservices.co.uk
+Description: Custom WordPress theme for Control Valve Services.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-theme, responsive, engineering
+Text Domain: cvs-website
+*/
+
 :root {
     --primary: #1a56ae;
     /* Brand Blue */
@@ -145,6 +158,8 @@ h1 {
     display: flex;
     list-style: none;
     gap: 30px;
+    margin: 0;
+    /* WordPress reset */
 }
 
 .desktop-nav a {
@@ -172,9 +187,18 @@ h1 {
     min-height: 600px;
     display: flex;
     align-items: center;
-    background: #000 url('hero-image.png') center/cover;
+    /* Background image will be set inline in template to use correct path or via specific class */
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
     color: var(--white);
     overflow: hidden;
+}
+
+/* Default hero bg if none specified - careful with paths in WP */
+.hero {
+    background-image: url('assets/hero-image.png');
+    /* Fallback, but likely overridden */
 }
 
 .hero-overlay {
@@ -301,33 +325,7 @@ h1 {
     overflow: hidden;
 }
 
-.about-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('about-hero.png') center/cover;
-}
-
-.diagnostics-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-diagnostics-2.jpg') center/cover;
-}
-
-.safety-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000') center/cover;
-}
-
-.service.supply-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-procurement.jpg') center/cover;
-}
-
-.services-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-repairs.jpg') center/cover;
-}
-
-.news-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('news-hero.png') center 15%/cover;
-}
-
-.contact-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('contact-hero.png') center/cover;
-}
+/* Note: Background images for headers will be handled inline or via specific classes in WP */
 
 .page-header h1 {
     font-size: 3rem;
@@ -620,4 +618,33 @@ h1 {
     .section {
         padding: 60px 0;
     }
+}
+
+/* Page Headers - Restored & Path Corrected */
+.about-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('assets/about-hero.png') center/cover;
+}
+
+.diagnostics-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-diagnostics-2.jpg') center/cover;
+}
+
+.safety-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2000') center/cover;
+}
+
+.service.supply-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-procurement.jpg') center/cover;
+}
+
+.services-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-repairs.jpg') center/cover;
+}
+
+.news-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('assets/news-hero.png') center 15%/cover;
+}
+
+.contact-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('assets/contact-hero.png') center/cover;
 }
