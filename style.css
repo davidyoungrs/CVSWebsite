@@ -11,6 +11,7 @@
     --white: #FFFFFF;
     --bg-dark: #0A1622;
     --transition: all 0.3s ease;
+    --emergency: #d9411e;
 }
 
 * {
@@ -88,6 +89,28 @@ h1 {
 .btn-outline {
     border: 1px solid var(--accent);
     color: var(--secondary);
+}
+
+.btn-outline-white {
+    border: 2px solid var(--white);
+    color: var(--white);
+    background: transparent;
+}
+
+.btn-outline-white:hover {
+    background: var(--white);
+    color: var(--secondary);
+}
+
+.btn-emergency {
+    background: var(--emergency);
+    color: var(--white);
+}
+
+.btn-emergency:hover {
+    background: #b83518;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 65, 30, 0.3);
 }
 
 .btn-lg {
@@ -278,6 +301,10 @@ h1 {
     overflow: hidden;
 }
 
+.about-header {
+    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('about-hero.png') center/cover;
+}
+
 .diagnostics-header {
     background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-diagnostics-2.jpg') center/cover;
 }
@@ -318,6 +345,11 @@ h1 {
     font-size: 1.15rem;
     line-height: 1.8;
     margin-bottom: 40px;
+    text-align: justify;
+}
+
+.text-content p {
+    margin-bottom: 30px;
 }
 
 /* Team Section */
@@ -331,10 +363,62 @@ h1 {
 .team-card .role {
     font-weight: 700;
     color: var(--primary);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 1px;
+}
+
+.team-card .linkedin-icon-inline {
+    height: 18px;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Four Pillars Grid */
+.pillars-grid {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pillar-card {
+    background: var(--white);
+    padding: 35px;
+    border-top: 4px solid var(--primary);
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-card h3 {
+    color: var(--secondary);
+    margin: 20px 0 15px;
+    font-size: 1.25rem;
+}
+
+.pillar-card p {
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.pillar-icon {
+    font-size: 2rem;
+    color: var(--primary);
 }
 
 /* Service Blocks (Internal Page) */
@@ -456,6 +540,18 @@ h1 {
 
 .footer-links a:hover {
     color: var(--white);
+}
+
+.footer-icon {
+    height: 24px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    transition: var(--transition);
+}
+
+.linkedin-link:hover .footer-icon {
+    transform: scale(1.1);
 }
 
 /* Mobile Responsiveness */
