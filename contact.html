@@ -64,7 +64,20 @@
                                 <label>Your Message</label>
                                 <textarea rows="5"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <div class="form-group checkbox-group"
+                                style="display: flex; gap: 10px; align-items: flex-start; margin-top: 15px;">
+                                <input type="checkbox" id="privacy-consent" name="privacy-consent" required
+                                    style="width: auto; margin-top: 4px;">
+                                <label for="privacy-consent" style="font-weight: 400; font-size: 0.9rem;">
+                                    I consent to having this website store my submitted information so they can respond
+                                    to my inquiry in accordance with the
+                                    <a href="https://controlvalveservices.co.uk/wp-content/uploads/2024/01/CVS-Website-Privacy-Notice-Jan-2024.pdf"
+                                        target="_blank"
+                                        style="color: var(--primary); text-decoration: underline;">Privacy Policy</a>.
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Send
+                                Message</button>
                         </form>
                     </div>
                     <div class="contact-info">
@@ -90,9 +103,10 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2026 Control Valve Services Ltd. | All Rights Reserved.</p>
+                <p>&copy; 2026 thevalve.pro | All Rights Reserved.</p>
                 <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
+                    <a href="https://controlvalveservices.co.uk/wp-content/uploads/2024/01/CVS-Website-Privacy-Notice-Jan-2024.pdf"
+                        target="_blank">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
                 </div>
             </div>
