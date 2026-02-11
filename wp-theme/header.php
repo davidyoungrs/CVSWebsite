@@ -9,7 +9,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": "https://controlvalveservices.co.uk",
-      "name": "Control Valve Services Ltd",
+      "name": "Control Valve Services",
       "image": "<?php echo get_template_directory_uri(); ?>/assets/logo.png",
       "url": "https://controlvalveservices.co.uk",
       "telephone": "+441484401648",
