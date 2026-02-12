@@ -70,5 +70,6 @@
             <div class="header-actions">
                 <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary">Request a Quote</a>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
