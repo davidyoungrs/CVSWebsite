@@ -260,7 +260,7 @@ h1 {
     min-height: 600px;
     display: flex;
     align-items: center;
-    background: #000 url('hero-image.png') center/cover;
+    background: #000 url('assets/hero-image.png') center/cover;
     color: var(--white);
     overflow: hidden;
 }
@@ -411,7 +411,7 @@ h1 {
 }
 
 .about-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('about-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('assets/about-hero.png') center/cover;
 }
 
 .diagnostics-header {
@@ -419,11 +419,11 @@ h1 {
 }
 
 .safety-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('safety-valve-testing.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('assets/safety-valve-testing.png') center/cover;
 }
 
 .service.supply-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('valve-supply-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('assets/valve-supply-hero.png') center/cover;
 }
 
 .services-header {
@@ -431,19 +431,19 @@ h1 {
 }
 
 .repairs-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('valve-repairs-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('assets/valve-repairs-hero.png') center/cover;
 }
 
 .news-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('news-hero.png') center 15%/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('assets/news-hero.png') center 15%/cover;
 }
 
 .contact-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('contact-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('assets/contact-hero.png') center/cover;
 }
 
 .on-site-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('on-site-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('assets/on-site-hero.png') center/cover;
 }
 
 .page-header h1 {
