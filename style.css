@@ -157,6 +157,7 @@ h1 {
 
 .logo img {
     height: 40px;
+    width: auto;
     /* Smaller for mobile base */
 }
 
@@ -604,6 +605,7 @@ h1 {
 
 .contact-logo {
     max-width: 200px;
+    height: auto;
     margin-bottom: 20px;
     display: block;
 }
