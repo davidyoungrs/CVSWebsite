@@ -787,3 +787,14 @@ h1 {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* Inline SVG Icon support */
+.icon-svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    vertical-align: -0.125em;
+}
