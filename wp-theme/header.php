@@ -42,7 +42,7 @@
         <div class="container">
             <div class="logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="CVS Logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.webp" alt="CVS Logo" width="900" height="400">
                 </a>
             </div>
             <nav class="desktop-nav">

@@ -260,7 +260,7 @@ h1 {
     min-height: 600px;
     display: flex;
     align-items: center;
-    background: #000 url('hero-image.png') center/cover;
+    background: #000 url('hero-image.webp') center/cover;
     color: var(--white);
     overflow: hidden;
 }
@@ -411,39 +411,39 @@ h1 {
 }
 
 .about-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('about-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('about-hero.webp') center/cover;
 }
 
 .diagnostics-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-diagnostics-2.jpg') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('diagnostics-hero.webp') center/cover;
 }
 
 .safety-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('safety-valve-testing.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('safety-valve-testing.webp') center/cover;
 }
 
 .service.supply-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('valve-supply-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('valve-supply-hero.webp') center/cover;
 }
 
 .services-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('https://www.controlvalveservices.co.uk/wp-content/uploads/2015/12/control-valve-repairs.jpg') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('services-hero.webp') center/cover;
 }
 
 .repairs-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('valve-repairs-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('valve-repairs-hero.webp') center/cover;
 }
 
 .news-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('news-hero.png') center 15%/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.85), rgba(10, 22, 34, 0.85)), url('news-hero.webp') center 15%/cover;
 }
 
 .contact-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('contact-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('contact-hero.webp') center/cover;
 }
 
 .on-site-header {
-    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('on-site-hero.png') center/cover;
+    background: linear-gradient(rgba(10, 22, 34, 0.8), rgba(10, 22, 34, 0.8)), url('on-site-hero.webp') center/cover;
 }
 
 .page-header h1 {

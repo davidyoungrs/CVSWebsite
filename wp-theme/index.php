@@ -2,7 +2,7 @@
 
 <main>
     <section class="hero"
-        style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/hero-image.png');">
+        style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/hero-image.webp');">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <span class="badge">Independent Specialist Since 2007</span>

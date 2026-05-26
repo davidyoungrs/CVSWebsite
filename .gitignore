@@ -10,3 +10,7 @@ node_modules/
 # Gemini/Antigravity artifacts (optional to ignore, but usually kept local)
 .gemini/
 brain/
+
+# macOS metadata
+._*
+.DS_Store
